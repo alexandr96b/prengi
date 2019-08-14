@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Title</title>
+    <meta property="og:title" content="" /> 
+    <meta property="og:description" content="" />
+    <meta name="title" content="" /> 
+    <meta name="description" content="" /> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900,900i&display=swap&subset=cyrillic-ext" rel="stylesheet">
+	<link href="css/jquery.fancybox.min.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="webfonts/fonts.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href=favicon.ico” rel=”shortcut icon” type=”image/x-icon”>
+	<link rel="shortcut icon" href="#">
+	<link rel="shortcut icon" href="favicon.png" type="image/png" />	
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<!-- modal-callback -->
+<div class="modal b-modal fade" id="modal-callback" tabindex="-1" role="dialog" aria-labelledby="modal-callback" aria-hidden="true">
+  <div class="modal-dialog">
+		<button data-dismiss="modal" class="modal-close"></button>
+		<div class="b-modal-top">
+			<span>Залиште свої дані</span>
+		</div>
+		<div class="b-modal-form">
+			<form action="">
+				<input class="b-footer-input" type="text" placeholder="Ваше ім’я *">
+				<input class="b-footer-input" type="text" placeholder="Ваш телефон">
+				<textarea class="b-footer-textarea" placeholder="Повідомлення *"></textarea>
+				<input class="b-footer-btn" type="submit" value="Відправити">
+			</form>
+		</div>
+		<div class="b-modal-bg">
+			<img src="images/modal-bg.png" alt="">
+		</div>
+    </div>
+  </div>
+
+
+	<div class="b-nav">
+		<div class="b-nav-top">
+			<button class="b-nav-btn">
+				<span class="b-nav-btn__ico">
+					<img src="images/b-nav-btn__ico.png" alt="">
+				</span>
+				<p>Чат<br/>
+				з нами</p>
+			</button>
+			<button class="b-nav-btn">
+				<span class="b-nav-btn__ico">
+					<img src="images/b-nav-btn__ico2.png" alt="">
+				</span>
+				<p>Замовити<br/>
+				дзвінок</p>
+			</button>			
+		</div>
+		<ul>
+			<li>
+				<a href="#header">
+					<span class="b-nav-ico">
+						<span class="b-nav-ico__wrap"></span>
+					</span>
+					<p>головна</p>					
+				</a>
+			</li>
+			<li>
+				<a href="#prog">
+					<span class="b-nav-ico">
+						<span class="b-nav-ico__wrap"></span>
+					</span>
+					<p>Питання, які  вирішує програма</p>					
+				</a>
+			</li>
+			<li>
+				<a href="#modules">
+					<span class="b-nav-ico">
+						<span class="b-nav-ico__wrap"></span>
+					</span>
+					<p>модулі програми</p>					
+				</a>
+			</li>
+			<li>
+				<a href="#advantages">
+					<span class="b-nav-ico">
+						<span class="b-nav-ico__wrap"></span>
+					</span>
+					<p>переваги використання</p>					
+				</a>
+			</li>
+			<li>
+				<a href="#solutions">
+					<span class="b-nav-ico">
+						<span class="b-nav-ico__wrap"></span>
+					</span>
+					<p>Експертні рішення PRENGI Для вашої галузі</p>					
+				</a>
+			</li>
+			<li>
+				<a href="#options">
+					<span class="b-nav-ico">
+						<span class="b-nav-ico__wrap"></span>
+					</span>
+					<p>Варіанти розгортання</p>					
+				</a>
+			</li>
+			<li>
+				<a href="#video">
+					<span class="b-nav-ico">
+						<span class="b-nav-ico__wrap"></span>
+					</span>
+					<p>prengi рекомендують</p>					
+				</a>
+			</li>
+			<li>
+				<a href="#partners">
+					<span class="b-nav-ico">
+						<span class="b-nav-ico__wrap"></span>
+					</span>
+					<p>prengi вже обрали</p>					
+				</a>
+			</li>
+			<li>
+				<a href="#bt">
+					<span class="b-nav-ico">
+						<span class="b-nav-ico__wrap"></span>
+					</span>
+					<p>контакти</p>					
+				</a>
+			</li>												
+		</ul>
+	</div>
+
+
+	<div class="b-container">
+		<!-- begin b-header -->
+		<header class="b-header" id="header">
+			<div class="b-header-xs">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl">
+							<a href="tel:0-800-09-555-000" class="b-phone">0-800-09-555-000</a>
+							<div class="b-mobile">
+							    <div class="menu-icon">
+							        <div class="menu-icon__wrapper">
+							            <span class="b-menu__icon">
+							                <i class="b-menu__line b-menu__line_1"></i>
+							                <i class="b-menu__line b-menu__line_2"></i>
+							                <i class="b-menu__line b-menu__line_3"></i>
+							            </span>
+							        </div>
+							    </div> 
+							</div>
+						</div>
+					</div>
+				</div>							
+			</div>			
+			<div class="container">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-header-top">
+							<a href="" class="b-logo">
+								<img src="images/logo.png" alt="">
+							</a>
+							<div class="b-header-right">
+								<a href="tel:0-800-09-555-000" class="b-phone">0-800-09-555-000</a>
+								<div class="b-callback">
+									<button class="btn-callback">зворотній зв'язок</button>
+									<div class="b-block">
+										<div class="b-block-item">
+											<div class="b-block-item__ico">
+												<img src="images/b-block-item__ico.png" alt="">
+											</div>
+											<span>Чат з нами</span>
+										</div>
+										<a href="tel:0-800-555-000-00" class="b-block-item">
+											<span class="b-block-item__ico">
+												<img src="images/b-block-item__ico2.png" alt="">
+											</span>
+											<span>0-800-555-000-00</span>
+										</a>
+										<div class="b-block-item" data-toggle="modal" data-target="#modal-callback" >
+											<div class="b-block-item__ico">
+												<img src="images/b-block-item__ico3.png" alt="">
+											</div>
+											<span>Замовити дзвінок</span>
+										</div>										
+									</div>
+								</div>
+								
+								<div class="b-lang">
+									<ul>
+										<li><a href="">en</a></li>
+										<li class="active"><a href="">Ua</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="b-header-content">
+							<h1><span>Живи</span>  вільно, подорожуй,<br/>
+							проводь час з близькими,<br/>
+							керуючи своїм  <span>бізнесом on-line</span></h1>
+						</div>
+						<div class="b-header-bottom">
+							<div class="b-header-block">
+								<span><b>ІТ рішення,</b> що управляє процесами, <br/>
+								зв’язаними з експлуатацією<br/>
+								об’єктів нерухомості</span>
+								<a href="" class="b-header-link">
+									дивитися<br/>
+									презентацію
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end b-header -->
+
+		<section class="b-programm" id="prog">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-title">
+							<h2>Питання, які вирішує програма</h2>
+						</div>
+					</div>
+				</div>
+				<div class="b-programm-content">
+					<div class="row">
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-programm-item">
+								<div class="b-programm-item__img">
+									<img src="images/b-programm-item__img.png" alt="">
+								</div>
+								<div class="b-programm-item__text">
+									<p>Створення єдиної інформаційної 
+									бази об'єкта експлуатації,
+									<span>включаючи паспорт об'єкта, документацію,
+									всі необхідні характеристики розташування
+									обладнання, технологічну карту обслуговування</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-programm-item">
+								<div class="b-programm-item__img">
+									<img src="images/b-programm-item__img2.png" alt="">
+								</div>
+								<div class="b-programm-item__text">
+									<p>Контроль енергоспоживання,
+									можливість заощадження
+									та раціонального
+									використання енергії</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-programm-item">
+								<div class="b-programm-item__img">
+									<img src="images/b-programm-item__img3.png" alt="">
+								</div>
+								<div class="b-programm-item__text">
+									<p>Контроль виконання
+									ремонтних робіт
+									та експлуатації обладнання</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-programm-item">
+								<div class="b-programm-item__img">
+									<img src="images/b-programm-item__img4.png" alt="">
+								</div>
+								<div class="b-programm-item__text">
+									<p>Скорочення витрат
+									на експлуатацію</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-programm-item">
+								<div class="b-programm-item__img">
+									<img src="images/b-programm-item__img5.png" alt="">
+								</div>
+								<div class="b-programm-item__text">
+									<p>Управління 
+									підрядними організаціями</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-programm-item">
+								<div class="b-programm-item__img">
+									<img src="images/b-programm-item__img6.png" alt="">
+								</div>
+								<div class="b-programm-item__text">
+									<p>Можливість аналізу процесів,
+									пов'язаних з утриманням
+									та обслуговуванням нерухомості</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-programm-item">
+								<div class="b-programm-item__img">
+									<img src="images/b-programm-item__img7.png" alt="">
+								</div>
+								<div class="b-programm-item__text">
+									<p>Немає потреби установки
+									та роботи стаціонарного 
+									програміста, а також закупівлі
+									дорогого устаткування</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-programm-item">
+								<div class="b-programm-item__img">
+									<img src="images/b-programm-item__img8.png" alt="">
+								</div>
+								<div class="b-programm-item__text">
+									<p>Відслідковування процесів
+									в режимі реального часу
+									на любому пристрої
+									з будь-якої точки світу</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-programm-item">
+								<div class="b-programm-item__img">
+									<img src="images/b-programm-item__img9.png" alt="">
+								</div>
+								<div class="b-programm-item__content">
+									<span>Ми постійно працюємо над вирішенням нових задач сервісу</span>
+									<p>Не знайшли те, що шукаєте?</p>
+									<div class="b-block-wrap">
+										<button class="b-programm-item__link">знайти відповідь</button>
+										<div class="b-block">
+											<div class="b-block-item">
+												<div class="b-block-item__ico">
+													<img src="images/b-block-item__ico.png" alt="">
+												</div>
+												<span>Чат з нами</span>
+											</div>
+											<a href="tel:0-800-555-000-00" class="b-block-item">
+												<span class="b-block-item__ico">
+													<img src="images/b-block-item__ico2.png" alt="">
+												</span>
+												<span>0-800-555-000-00</span>
+											</a>
+											<div class="b-block-item">
+												<div class="b-block-item__ico">
+													<img src="images/b-block-item__ico3.png" alt="">
+												</div>
+												<span>Замовити дзвінок</span>
+											</div>										
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>																												
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="b-modules" id="modules">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-title">
+							<h2>Модулі програми</h2>
+						</div>
+						<div class="b-modules-content">
+							<div class="b-modules-item b-modules-item__yellow b-modules-item__1">
+								<div class="b-modules-img">
+									<img src="images/b-modules-img.png" alt="">
+								</div>
+								<span>Паспорт
+								об’єкта</span>
+							</div>
+							<div class="b-modules-content__col">
+								<div class="b-modules-item b-modules-item__red">
+									<div class="b-modules-img">
+										<img src="images/b-modules-img2.png" alt="">
+									</div>
+									<span>Технічна 
+									експлуатація
+									будівель та
+									обладнання</span>
+								</div>
+								<div class="b-modules-item b-modules-item__blue">
+									<div class="b-modules-img">
+										<img src="images/b-modules-img3.png" alt="">
+									</div>
+									<span>Енерго
+									менеджмент</span>
+								</div>
+							</div>		
+							<div class="b-modules-content__center">
+								<div class="b-modules-block__logo">
+									<img src="images/b-modules-block__logo.png" alt="">
+								</div>
+								<div class="b-modules-block">
+									<div class="b-modules-block__img">
+										<img src="images/b-modules-block__img.png" alt="">
+									</div>
+									<div class="b-modules-block__text">
+										<p>Ми постійно<br/> працюємо<br/>
+										над вирішенням<br/> нових задач сервісу</p>
+										<span>Не знайшли ваш модуль?</span>
+										<a href="" class="b-modules-block__link">дивитися
+										презентацію</a>
+									</div>
+								</div>
+							</div>
+							<div class="b-modules-content__col b-modules-content__col__2">
+								<div class="b-modules-item b-modules-item__blue b-modules-item__11">
+									<div class="b-modules-img">
+										<img src="images/b-modules-img4.png" alt="">
+									</div>
+									<span>Охорона
+									праці</span>
+								</div>
+								<div class="b-modules-item b-modules-item__yellow b-modules-item__22">
+									<div class="b-modules-img">
+										<img src="images/b-modules-img5.png" alt="">
+									</div>
+									<span>Охорона
+									порядку</span>
+								</div>								
+							</div>	
+							<div class="b-modules-item b-modules-item__red b-modules-item__6">
+								<div class="b-modules-img">
+									<img src="images/b-modules-img6.png" alt="">
+								</div>
+								<span>Прибирання
+								об’єкта</span>
+							</div>																		
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="b-advantages" id="advantages">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-title">
+							<h2>Переваги використання</h2>
+						</div>
+						<div class="b-advantages-content">
+							<div class="b-advantages-left">
+								<ul>
+									<li>Живі бізнес-процеси</li>
+									<li>Система «Intellect», облік рівня доступів</li>
+									<li>Можливість<br/> використовувати<br/> з будь-якої точки Світу<br/>  з будь-якого пристрою</li>
+									<li>Немає необхідності<br/> встановлення і стаціонарної<br/> роботи програміста</li>
+									<li>Можливість впровадження<br/> і тестуванняв реальному часі</li>
+								</ul>
+							</div>
+							<div class="b-advantages-bottom">
+								<button class="b-advantages-btn">
+									<span>замовити <br/>презентацію</span>
+								</button>
+								<div class="b-advantages-image">
+									<img src="images/advantages_devices.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="b-solutions" id="solutions">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-title">
+							<h2>Експертні рішення PRENGI для вашої галузі</h2>
+						</div>
+					</div>
+				</div>
+				<div class="b-solutions-content">
+					<div class="row">
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-solutions-item">
+								<div class="b-solutions-item__img">
+									<img src="images/b-solutions-item__img.png" alt="">
+								</div>
+								<div class="b-solutions-item__image">
+									<img src="images/b-solutions-item__image.jpg" alt="">
+								</div>
+								<div class="b-solutions-item__text">
+									<span>Логістика</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-solutions-item">
+								<div class="b-solutions-item__img">
+									<img src="images/b-solutions-item__img2.png" alt="">
+								</div>
+								<div class="b-solutions-item__image">
+									<img src="images/b-solutions-item__image2.jpg" alt="">
+								</div>
+								<div class="b-solutions-item__text">
+									<span>торгівельні центрИ</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-solutions-item">
+								<div class="b-solutions-item__img">
+									<img src="images/b-solutions-item__img3.png" alt="">
+								</div>
+								<div class="b-solutions-item__image">
+									<img src="images/b-solutions-item__image3.jpg" alt="">
+								</div>
+								<div class="b-solutions-item__text">
+									<span>IT технології</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-solutions-item">
+								<div class="b-solutions-item__img">
+									<img src="images/b-solutions-item__img4.png" alt="">
+								</div>
+								<div class="b-solutions-item__image">
+									<img src="images/b-solutions-item__image4.jpg" alt="">
+								</div>
+								<div class="b-solutions-item__text">
+									<span>Виробництво</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-solutions-item">
+								<div class="b-solutions-item__img">
+									<img src="images/b-solutions-item__img5.png" alt="">
+								</div>
+								<div class="b-solutions-item__image">
+									<img src="images/b-solutions-item__image5.jpg" alt="">
+								</div>
+								<div class="b-solutions-item__text">
+									<span>обслуговування<br/>
+									нерухомості</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-solutions-item">
+								<div class="b-solutions-item__wrap">
+									<div class="b-solutions-item__container">
+										<div class="b-solutions-item__ico">
+											<img src="images/b-solutions-item__img6.png" alt="">
+										</div>									
+										<span>Ми постійно працюємо над вирішенням нових задач сервісу</span>
+										<p>Не знайшли те, що шукаєте?</p>
+									</div>
+									<a href="" class="b-solutions-item__link">рішення <br/>для вашої галузі</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="b-options" id="options">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-title">
+							<h2>Варіанти розгортання</h2>
+						</div>
+						<div class="b-options-content">
+							<img src="images/b-options-img.png" alt="">
+							<div class="b-options-bottom">
+								<div class="b-options-item">CLOUD</div>
+								<div class="b-options-item__line"></div>
+								<div class="b-options-item">On-Site</div>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="b-video" id="video">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-title">
+							<h2>Prengi рекомендують </h2>
+						</div>
+						<div class="b-video-content">
+							<div class="b-video-left">
+								<iframe src="https://www.youtube.com/embed/wTThsC4T_eY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<ul>
+								<li><a target="_blank" href="https://youtu.be/wTThsC4T_eY"><img src="images/video-img.jpg" alt=""></a></li>
+								<li><a target="_blank" href="https://youtu.be/wTThsC4T_eY"><img src="images/video-img2.jpg" alt=""></a></li>
+								<li><a target="_blank" href="https://youtu.be/wTThsC4T_eY"><img src="images/video-img3.jpg" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="b-partners" id="partners">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-title">
+							<h2>Prengi вже обрали</h2>
+						</div>
+					</div>
+				</div>
+				<div class="b-partners-content">
+					<div class="row">
+						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+							<div class="b-partners-item">
+								<img src="images/b-partners-item__img.png" alt="">
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+							<div class="b-partners-item">
+								<img src="images/b-partners-item__img2.png" alt="">
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+							<div class="b-partners-item">
+								<img src="images/b-partners-item__img3.png" alt="">
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+							<div class="b-partners-item">
+								<img src="images/b-partners-item__img4.png" alt="">
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+							<div class="b-partners-item">
+								<img src="images/b-partners-item__img5.png" alt="">
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+							<div class="b-partners-item">
+								<img src="images/b-partners-item__img6.png" alt="">
+							</div>
+						</div>	
+						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+							<div class="b-partners-item">
+								<img src="images/b-partners-item__img7.png" alt="">
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+							<div class="b-partners-item">
+								<img src="images/b-partners-item__img8.png" alt="">
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+							<div class="b-partners-item">
+								<img src="images/b-partners-item__img9.png" alt="">
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+							<div class="b-partners-item">
+								<img src="images/b-partners-item__img10.png" alt="">
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+							<div class="b-partners-item">
+								<img src="images/b-partners-item__img11.png" alt="">
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+							<div class="b-partners-item">
+								<img src="images/b-partners-item__img12.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="b-bottom" id="bt">
+			<div class="b-col b-col__left">
+				<div class="b-text">
+					<div class="b-text__wrap">
+						<span>Залишилися <br/>
+						питання?</span>
+						<p>Запитайте про продукти, ціни, реалізації або будь які питання, які вас хвилюють стосовно нашого продукту.
+						Наші консультанти тут, щоб допомогти вам намітити курс до успіху.</p>
+						<b>Просто заповніть форму праворуч <br/>або зателефонуйте 8-800-000-555-55</b>
+					</div>
+				</div>
+				<div class="b-col-img">
+				</div>
+			</div>
+			<div class="b-col">
+				<div class="b-form">
+					<div class="b-form-wrap">
+						<div class="b-form-top">
+							<span>
+								<b>Заповніть ваші контактні дані.</b>
+								Зв'яжемося з вами по viber
+							</span>
+						</div>
+						<form action="">
+							<input class="b-form-input" type="text" placeholder="Ім’я*">
+							<input class="b-form-input" type="text" placeholder="Прізвище">
+							<input class="b-form-input" type="text" placeholder="Посада">
+							<input class="b-form-input" type="text" placeholder="Телефон">
+							<input class="b-form-input" type="text" placeholder="Електронна адреса">
+							<input class="b-form-input" type="text" placeholder="Компанія">
+							<div class="b-form-item">
+								<span>Кількість співробітників</span>
+								<select class="b-form-select">
+									<option value="">10 – 50</option>
+									<option value="">51 – 100</option>
+									<option value="">101 – 500</option>
+									<option value="">понад 500</option>
+								</select>
+							</div>
+							<input class="b-form-input" type="text" placeholder="Країна">
+							<input class="b-form-input" type="text" placeholder="Галузь використання">
+							<div class="b-checkbox">
+								<input type="checkbox" checked id="n1" name="n1" />
+								<label for="n1"><span></span><i>Я хотів би отримувати маркетингові повідомлення про продукти, послуги та події Prengi. Я можу відписатися в будь-який час.</i></label>  
+							</div>	
+							<div class="b-checkbox">
+								<input type="checkbox" checked id="n3" name="n3" />
+								<label for="n3"><span></span><i>Реєструючись, ви підтверджуєте свою згоду на обробку Ваших персональних даних компанією Prengi, як описано в заяві про конфіденційність.</i></label>  
+							</div>	
+							<input class="b-form-btn" type="submit" value="відправити дані">											
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- begin b-footer -->
+		<footer class="b-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-footer-left">
+							<div class="b-footer-logo">
+								<img src="images/b-footer-logo.png" alt="">
+							</div>
+							<span>© Prengi Ink. 2008 – 2019. Всі права захищені</span>
+						</div>
+						<div class="b-footer-contacts">
+							<b>Контакти представництв:</b>
+							<span>Україна:  +38 096 442 18 26</span>
+							<span>США: +1 305 450 44 40</span>
+						</div>
+						<div class="b-footer-right">
+							<div class="b-footer-social">
+								<ul>
+									<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href=""><i class="fab fa-twitter"></i></a></li>
+									<li><a href=""><i class="fab fa-youtube"></i></a></li>
+								</ul>
+							</div>
+							<div class="b-footer-form">
+								<div class="b-footer-form__top">
+									<div class="b-footer-form__top__ico">
+										<img src="images/b-footer-form__top__ico.jpg" alt="">
+									</div>
+									<span>Є запитання?</span>
+								</div>
+								<div class="b-footer-form__content">
+									<b>Залиште свої дані</b>
+									<form action="">
+										<input class="b-footer-input" type="text" placeholder="Ваше ім’я *">
+										<input class="b-footer-input" type="text" placeholder="Ваш телефон">
+										<textarea class="b-footer-textarea" placeholder="Повідомлення *"></textarea>
+										<input class="b-footer-btn" type="submit" value="Відправити">
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="b-xs-copyright">
+							<span>© Prengi Ink. 2008 – 2019. Всі права захищені</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end b-footer -->	
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+	<script src="js/fontawesome.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
