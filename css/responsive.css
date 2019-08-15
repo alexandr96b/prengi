@@ -611,6 +611,9 @@
 		font-size: 32px;
 		line-height: 34px;
 	}
+	.b-header-xs{
+		display: block;
+	}
 }
 @media (max-width: 680px) {
 
