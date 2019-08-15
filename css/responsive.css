@@ -13,9 +13,6 @@
 
 }
 @media (max-width: 1199px) {
-	.b-nav{
-		left: 15px;
-	}
 	.b-video-left{
 	    width: 636px;
 	}
@@ -56,11 +53,6 @@
 	}
 }	
 @media (max-width: 991px){	
-
-	
-	.b-nav{
-		display: none;
-	}
 	.b-modules-block__logo{
 		display: none;
 	}
@@ -614,6 +606,20 @@
 	.b-header-xs{
 		display: block;
 	}
+	.b-nav:after{
+		display: none;
+	}
+	.b-nav:before{
+		display: none;
+	}
+	.b-nav ul li a p{
+		opacity: 1;
+		visibility: visible;
+	    -webkit-transform: rotate(0deg);
+	    transform: rotate(0deg);	
+	    transition: 0.3s;
+	    display: block;
+	}	
 }
 @media (max-width: 680px) {
 
