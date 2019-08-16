@@ -341,6 +341,9 @@ textarea{
 	background: url(../images/icon_phone.png) center no-repeat;
 	margin: 0 10px 0 0;
 }
+.b-phone:hover , .b-phone:active{
+	color: #7c7d7d;
+}
 .b-callback{
 	position: relative;
 }
