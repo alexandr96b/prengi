@@ -694,9 +694,8 @@ h2{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
 	height: 100%;
-	z-index: 1;
+	z-index: 999999999;
 }
 .b-container-wrap{
 	position: sticky;
@@ -1297,6 +1296,7 @@ h2{
 	padding: 0;
 	margin: 0;
 	flex-shrink: 0;
+	display: block;
 }
 .b-video-content ul li{
 	list-style: none;
@@ -1321,6 +1321,11 @@ h2{
 	background-repeat: no-repeat;
 }
 .b-video-content ul li a:hover:before{
+    background: url(../images/icon_youtube_hover.png) rgba(55, 6, 101, 0.55);
+	background-position: left 15px bottom 15px;
+	background-repeat: no-repeat;	
+}
+.b-video-content ul li a.active:before{
     background: url(../images/icon_youtube_hover.png) rgba(55, 6, 101, 0.55);
 	background-position: left 15px bottom 15px;
 	background-repeat: no-repeat;	

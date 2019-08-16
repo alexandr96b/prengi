@@ -517,6 +517,7 @@
 		background-size: cover;
 	}
 	.b-nav{
+		position: fixed;
 		display: block;
 		background: #8867aa;
 		width: 100%;
@@ -529,6 +530,12 @@
 		opacity: 0;
 		visibility: hidden;
 		transition: 0.3s;
+	}
+	.b-container-wrap{
+		position: static !important;
+	}
+	.b-container-wrapper{
+		position: static;
 	}
 	.b-nav.active{
 		z-index: 100000;
