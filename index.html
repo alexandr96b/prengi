@@ -53,6 +53,47 @@
   </div>
 
 
+<!-- modal-callback -->
+<div class="modal b-modal fade" id="perevagi" tabindex="-1" role="dialog" aria-labelledby="perevagi" aria-hidden="true">
+  <div class="modal-dialog">
+		<button data-dismiss="modal" class="modal-close"></button>
+		<div class="b-modal-top">
+			<span>Залиште свої дані</span>
+		</div>
+		<div class="b-modal-form">
+			<form action="">
+				<input class="b-footer-input" type="text" placeholder="Ваше ім’я *">
+				<input class="b-footer-input" type="text" placeholder="Ваш телефон">
+				<textarea class="b-footer-textarea" placeholder="Повідомлення *"></textarea>
+				<input class="b-footer-btn" type="submit" value="Відправити">
+			</form>
+		</div>
+		<div class="b-modal-bg">
+			<img src="images/modal-bg.png" alt="">
+		</div>
+    </div>
+  </div>
+
+<!-- modal-callback -->
+<div class="modal b-modal fade" id="experrishenia" tabindex="-1" role="dialog" aria-labelledby="experrishenia" aria-hidden="true">
+  <div class="modal-dialog">
+		<button data-dismiss="modal" class="modal-close"></button>
+		<div class="b-modal-top">
+			<span>Залиште свої дані</span>
+		</div>
+		<div class="b-modal-form">
+			<form action="">
+				<input class="b-footer-input" type="text" placeholder="Ваше ім’я *">
+				<input class="b-footer-input" type="text" placeholder="Ваш телефон">
+				<textarea class="b-footer-textarea" placeholder="Повідомлення *"></textarea>
+				<input class="b-footer-btn" type="submit" value="Відправити">
+			</form>
+		</div>
+		<div class="b-modal-bg">
+			<img src="images/modal-bg.png" alt="">
+		</div>
+    </div>
+  </div>
 
 
 	<!-- begin b-header -->
@@ -128,7 +169,7 @@
 							<span><b>ІТ рішення,</b> що управляє процесами, <br/>
 							зв’язаними з експлуатацією<br/>
 							об’єктів нерухомості</span>
-							<a href="" class="b-header-link">
+							<a href="https://www.youtube.com/embed/wTThsC4T_eY?rel=0&showinfo=0&autoplay=1" rel="group" class="fancybox-media b-header-link">
 								дивитися<br/>
 								презентацію
 							</a>
@@ -371,7 +412,7 @@
 												</span>
 												<span>0-800-555-000-00</span>
 											</a>
-											<div class="b-block-item">
+											<div class="b-block-item" data-toggle="modal" data-target="#modal-callback" >
 												<div class="b-block-item__ico">
 													<img src="images/b-block-item__ico3.png" alt="">
 												</div>
@@ -425,6 +466,7 @@
 									<img src="images/b-modules-block__logo.png" alt="">
 								</div>
 								<div class="b-modules-block">
+									<a target="_blank" href="https://www.google.com.ua/?hl=ru"></a>
 									<div class="b-modules-block__img">
 										<img src="images/b-modules-block__img.png" alt="">
 									</div>
@@ -432,8 +474,8 @@
 										<p>Ми постійно<br/> працюємо<br/>
 										над вирішенням<br/> нових задач сервісу</p>
 										<span>Не знайшли ваш модуль?</span>
-										<a href="" class="b-modules-block__link">дивитися
-										презентацію</a>
+										<button class="b-modules-block__link">дивитися
+										презентацію</button>
 									</div>
 								</div>
 							</div>
@@ -484,7 +526,7 @@
 								</ul>
 							</div>
 							<div class="b-advantages-bottom">
-								<button class="b-advantages-btn">
+								<button class="b-advantages-btn" data-toggle="modal" data-target="#perevagi">
 									<span>замовити <br/>презентацію</span>
 								</button>
 								<div class="b-advantages-image">
@@ -584,7 +626,7 @@
 										<span>Ми постійно працюємо над вирішенням нових задач сервісу</span>
 										<p>Не знайшли те, що шукаєте?</p>
 									</div>
-									<a href="" class="b-solutions-item__link">рішення <br/>для вашої галузі</a>
+									<button class="b-solutions-item__link" data-toggle="modal" data-target="#experrishenia" >рішення <br/>для вашої галузі</button>
 								</div>
 							</div>
 						</div>
@@ -625,9 +667,9 @@
 								<iframe src="https://www.youtube.com/embed/wTThsC4T_eY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<ul>
-								<li><a target="_blank" href="https://youtu.be/wTThsC4T_eY"><img src="images/video-img.jpg" alt=""></a></li>
-								<li><a target="_blank" href="https://youtu.be/wTThsC4T_eY"><img src="images/video-img2.jpg" alt=""></a></li>
-								<li><a target="_blank" href="https://youtu.be/wTThsC4T_eY"><img src="images/video-img3.jpg" alt=""></a></li>
+								<li><a class="fancybox-media" href="https://www.youtube.com/embed/wTThsC4T_eY"><img src="images/video-img.jpg" alt=""></a></li>
+								<li><a class="fancybox-media" href="https://www.youtube.com/embed/wTThsC4T_eY"><img src="images/video-img2.jpg" alt=""></a></li>
+								<li><a class="fancybox-media" href="https://www.youtube.com/embed/wTThsC4T_eY"><img src="images/video-img3.jpg" alt=""></a></li>
 							</ul>
 						</div>
 					</div>

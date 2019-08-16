@@ -5,6 +5,12 @@ $('.menu-icon').click(function(){
   $('.menu-icon').toggleClass('active');
 });
 
+$(".fancybox-media").fancybox({
+ "width": 620, // or whatever
+ "height": 420,
+ "type": "iframe"
+});
+
 
 $(document).on('click', function(event) {
   if (!$(event.target).closest(".menu-icon , .b-nav").length) {
