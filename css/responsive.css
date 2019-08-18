@@ -364,6 +364,7 @@
 		width: 145px;
 		font-size: 14px;
 		line-height: 16px;
+		padding: 15px 64px 0 0px;
 	}
 	.b-text:before{
 		display: none;
@@ -383,10 +384,7 @@
 	.b-video-content{
 		display: block;
 	}
-	.b-video-left{
-		width: 290px;
-		margin: 0 auto 0;
-	}
+
 	.b-video-content ul li img{
 		width: 100%;
 	}
@@ -516,20 +514,25 @@
 		background: url(../images/b-header-xs.png) center top no-repeat;
 		background-size: cover;
 	}
+	.b-nav-wrap{
+		
+	}
 	.b-nav{
 		position: fixed;
-		display: block;
 		background: #8867aa;
 		width: 100%;
 		top: 36px;
-		left: 0;
-		padding: 26px 0 0 0;
+		left: 0; 
+		padding: 26px 0 36px 0;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		opacity: 0;
 		visibility: hidden;
 		transition: 0.3s;
+		overflow: scroll;
+		height: 100%;
+		z-index: -1;
 	}
 	.b-container-wrap{
 		position: static !important;
@@ -545,6 +548,10 @@
 	}
 	.b-nav-ico{
 		display: none;
+	}
+	.b-nav ul {
+		flex-shrink: 0;
+		flex-grow: 1;
 	}
 	.b-nav ul li{
 		margin: 0;
@@ -627,6 +634,26 @@
 	    transition: 0.3s;
 	    display: block;
 	}	
+
+
+	.b-video-content ul{
+		justify-content: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 -5px;
+	}
+	.b-video-content ul li{
+		padding: 0 5px;
+		width: 50%;
+	}
+	.b-video-left{
+		display: block;
+		width: 100%;
+	}	
+	.b-video-left iframe{
+		height: 300px;
+	}
 }
 @media (max-width: 680px) {
 
