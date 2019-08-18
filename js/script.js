@@ -1,9 +1,6 @@
 $(document).ready(function () {
 
-$('.menu-icon').click(function(){
-  $('.b-nav').toggleClass('active');
-  $('.menu-icon').toggleClass('active');
-});
+
 
 $(".fancybox-media").fancybox({
  "width": 620, // or whatever
@@ -12,8 +9,13 @@ $(".fancybox-media").fancybox({
 });
 
 
+$('.menu-icon').click(function(){
+  $('.b-nav').toggleClass('active');
+  $('.menu-icon').toggleClass('active');
+}); 
+
 $(document).on('click', function(event) {
-  if (!$(event.target).closest(".menu-icon , .b-nav").length) {
+  if (!$(event.target).closest(".menu-icon , .b-nav-top").length) {
     $('.b-nav').removeClass('active');
     $('.menu-icon').removeClass('active');
   }
