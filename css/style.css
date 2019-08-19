@@ -1825,3 +1825,8 @@ option{
 	top: 25px;
 	right: 25px;
 }
+.fancybox-slide--iframe .fancybox-content{
+	height: 50% !important;
+	width: 100% !important;
+	max-width: calc(100% - 35px) !important;
+}
