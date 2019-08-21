@@ -25,7 +25,7 @@ $(document).on('click', function(event) {
 
 $(".b-nav a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
   scrollSpeed: 1500,
-  offset: 95,
+  offset: 0,
   forceSingleHighlight: true,
   highlightSelector:".b-nav a"
 });

@@ -13,6 +13,7 @@
     <meta name="description" content="" /> 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900,900i&display=swap&subset=cyrillic-ext" rel="stylesheet">
 	<link href="css/jquery.fancybox.min.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/fontawesome-all.css" rel="stylesheet">
 	<link href="webfonts/fonts.css" rel="stylesheet">
@@ -423,7 +424,7 @@
 								<span>Паспорт
 								об’єкта</span>
 							</div>
-							<div class="b-modules-content__col">
+							<div class="b-modules-content__col b-modules-content__col__left">
 								<div class="b-modules-item b-modules-item__red">
 									<div class="b-modules-img">
 										<img src="images/b-modules-img2.png" alt="">
@@ -454,8 +455,8 @@
 										<p>Ми постійно<br/> працюємо<br/>
 										над вирішенням<br/> нових задач сервісу</p>
 										<span>Не знайшли ваш модуль?</span>
-										<button class="b-modules-block__link">дивитися
-										презентацію</button>
+										<button class="b-modules-block__link"><span>дивитися
+										презентацію</span></button>
 									</div>
 								</div>
 							</div>
@@ -502,7 +503,7 @@
 									<li>Система «Intellect», облік рівня доступів</li>
 									<li>Можливість<br/> використовувати<br/> з будь-якої точки Світу<br/>  з будь-якого пристрою</li>
 									<li>Немає необхідності<br/> встановлення і стаціонарної<br/> роботи програміста</li>
-									<li>Можливість впровадження<br/> і тестуванняв реальному часі</li>
+									<li>Можливість впровадження<br/> і тестування в реальному часі</li>
 								</ul>
 							</div>
 							<div class="b-advantages-bottom">
@@ -635,37 +636,37 @@
 			</div>
 		</section>
 
-		<section class="b-video" id="video">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl">
-						<div class="b-title">
-							<h2>Prengi рекомендують </h2>
-						</div>
-						<div class="b-video-content">
-							<div class="b-video-left">
-								<div class="tab-content">
-									<div class="tab-pane active" id="tab1">
-										<iframe src="https://www.youtube.com/embed/wTThsC4T_eY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
-									<div class="tab-pane" id="tab2">
-										<iframe src="https://www.youtube.com/embed/wTThsC4T_eY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
-									<div class="tab-pane" id="tab3">
-										<iframe src="https://www.youtube.com/embed/wTThsC4T_eY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
-								</div>
+<!-- 		<section class="b-video" id="video">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl">
+				<div class="b-title">
+					<h2>Prengi рекомендують </h2>
+				</div>
+				<div class="b-video-content">
+					<div class="b-video-left">
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<iframe src="https://www.youtube.com/embed/wTThsC4T_eY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
-							<ul class="nav">
-								<li><a class="active" data-toggle="tab" href="#tab1"><img src="images/video-img.jpg" alt=""></a></li>
-								<li><a data-toggle="tab" href="#tab2"><img src="images/video-img2.jpg" alt=""></a></li>
-								<li><a data-toggle="tab" href="#tab3"><img src="images/video-img3.jpg" alt=""></a></li>
-							</ul>
+							<div class="tab-pane" id="tab2">
+								<iframe src="https://www.youtube.com/embed/wTThsC4T_eY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<div class="tab-pane" id="tab3">
+								<iframe src="https://www.youtube.com/embed/wTThsC4T_eY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
 						</div>
 					</div>
+					<ul class="nav">
+						<li><a class="active" data-toggle="tab" href="#tab1"><img src="images/video-img.jpg" alt=""></a></li>
+						<li><a data-toggle="tab" href="#tab2"><img src="images/video-img2.jpg" alt=""></a></li>
+						<li><a data-toggle="tab" href="#tab3"><img src="images/video-img3.jpg" alt=""></a></li>
+					</ul>
 				</div>
 			</div>
-		</section>
+		</div>
+	</div>
+</section> -->
 
 		<section class="b-partners" id="partners">
 			<div class="container">
@@ -757,7 +758,7 @@
 				<div class="b-col-img">
 				</div>
 			</div>
-			<div class="b-col">
+			<div class="b-col b-col__right">
 				<div class="b-form">
 					<div class="b-form-wrap">
 						<div class="b-form-top">
@@ -785,11 +786,11 @@
 							<input class="b-form-input" type="text" placeholder="Країна">
 							<input class="b-form-input" type="text" placeholder="Галузь використання">
 							<div class="b-checkbox">
-								<input type="checkbox" checked id="n1" name="n1" />
+								<input type="checkbox" id="n1" name="n1" />
 								<label for="n1"><span></span><i>Я хотів би отримувати маркетингові повідомлення про продукти, послуги та події Prengi. Я можу відписатися в будь-який час.</i></label>  
 							</div>	
 							<div class="b-checkbox">
-								<input type="checkbox" checked id="n3" name="n3" />
+								<input type="checkbox" id="n3" name="n3" />
 								<label for="n3"><span></span><i>Реєструючись, ви підтверджуєте свою згоду на обробку Ваших персональних даних компанією Prengi, як описано в заяві про конфіденційність.</i></label>  
 							</div>	
 							<input class="b-form-btn" type="submit" value="відправити дані">											
@@ -855,6 +856,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+	<script src="js/animation.js"></script>
+	<script src="js/jquery.viewportchecker.min.js"></script>
 	<script src="js/fontawesome.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
